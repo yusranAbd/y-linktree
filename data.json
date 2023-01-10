@@ -4,23 +4,23 @@
   "links": [
     {
       "title": "Next Doc",
-      "url": "https://nextjs.org/docs",
+      "href": "https://nextjs.org/docs",
       "image": "https://cdn.svgporn.com/logos/vercel-icon.svg"
     },
     {
       "title": "Whta I Read Today",
-      "url": "https://medium.com/",
+      "href": "https://medium.com/",
       "image": "https://cdn.svgporn.com/logos/medium-icon.svg"
     }
   ],
   "socials": [
     {
       "title": "Twitter",
-      "url": "https://twitter.com/ydoublea_"
+      "href": "https://twitter.com/ydoublea_"
     },
     {
       "title": "Github",
-      "url": "https://github.com/yusranAbd"
+      "href": "https://github.com/yusranAbd"
     }
   ]
 }
