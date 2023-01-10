@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import data from '../data.json'
+import { get } from '@vercel/edge-config';
+import { redirect } from 'next/navigation';
+
 
 function TwitterIcon() {
   return (
@@ -77,8 +79,32 @@ function LinkCard({ href, title, image }: {href: string; title:string; image?:st
   )
 }
 
-export default function Home() {
-  
+interface Data {
+  name: string;
+  avatar: string;
+  links: Link[];
+  socials: Social[];
+}
+
+interface Link {
+  href: string;
+  title: string;
+  image?: string;
+}
+
+interface Social {
+  href: string;
+  title: string;
+}
+
+export default async function HomePage() {
+  const data: Data | undefined = await get('linktree');
+
+  if (!data) {
+    // not working yet https://github.com/vercel/next.js/issues/44232
+    redirect('https://linktr.ee/selenagomez');
+  }
+
   return(
     <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
         <Image
