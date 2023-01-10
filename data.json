@@ -1,0 +1,26 @@
+{
+  "name": "Yusran Abdullah",
+  "avatar": "https://pbs.twimg.com/profile_images/1605115543350308864/Ik7S4XyI_400x400.jpg",
+  "links": [
+    {
+      "title": "Next Doc",
+      "url": "https://nextjs.org/docs",
+      "image": "https://cdn.svgporn.com/logos/vercel-icon.svg"
+    },
+    {
+      "title": "Whta I Read Today",
+      "url": "https://medium.com/",
+      "image": "https://cdn.svgporn.com/logos/medium-icon.svg"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/ydoublea_"
+    },
+    {
+      "title": "Github",
+      "url": "https://github.com/yusranAbd"
+    }
+  ]
+}
