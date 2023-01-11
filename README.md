@@ -3,7 +3,7 @@
 ## Tech Stack
 
 - Next.js
-- Tailwind
+- Tailwind CSS
 - Vercel
 
 ## Getting Started
