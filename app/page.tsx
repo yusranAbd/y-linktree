@@ -54,13 +54,13 @@ function GitHubIcon() {
   );
 }
 
-function LinkCard({ href, title, image }: {href: string; title:string; image?:string}) {
+function LinkCard({ href, title, image, bgGradient }: {href: string; title:string; image?:string; bgGradient:string}) {
   return(
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center p-1 w-full rounded-md hover:scale-105 transition-all bg-gray-100 mb-3 max-w-sm"
+      className={`flex items-center p-1 w-full rounded-md hover:scale-105 transition-all bg-gray-100 mb-3 max-w-sm ${bgGradient}`}
     >
       <div className="flex text-center w-full">
         <div className="w-10 h-10">
@@ -93,6 +93,7 @@ interface Link {
   href: string;
   title: string;
   image?: string;
+  bgGradient:string;
 }
 
 interface Social {
