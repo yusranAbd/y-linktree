@@ -74,7 +74,7 @@ function LinkCard({ href, title, image, bgGradient }: {href: string; title:strin
             />
           )}
         </div>
-        <h2 className="flex justify-center hover:font-bold items-center font-semibold w-full text-gray-700 -ml-10">
+        <h2 className="flex justify-center hover:font-bold items-center font-mono w-full text-gray-700 -ml-10">
           {title}
         </h2>
       </div>
@@ -119,7 +119,7 @@ export default async function HomePage() {
         width={96}
         height={96}
       />
-      <h1 className="font-medium mt-4 mb-8 text-xl text-white">{data.name}</h1>
+      <h1 className="font-mono mt-4 mb-8 text-xl text-white">{data.name}</h1>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
