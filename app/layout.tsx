@@ -1,6 +1,8 @@
 
 import '../styles/globals.css'
+import {Nunito} from '@next/font/google'
 
+const nunito = Nunito({subsets: ['latin']})
 export default function RootLayout({
     // Layouts must accept a children prop.
     // This will be populated with nested layouts or pages
@@ -10,7 +12,7 @@ export default function RootLayout({
   }) {
     return (
       <html lang="en">
-        <body>{children}</body>
+        <body className={nunito.className}>{children}</body>
       </html>
     );
   }

@@ -69,12 +69,12 @@ function LinkCard({ href, title, image, bgshine, disable }: {href: string; title
               className="rounded-sm"
               alt={title}
               src={image}
-              width={40}
-              height={40}
+              width={35}
+              height={35}
             />
           )}
         </div>
-        <h2 className="flex justify-center hover:font-bold items-center font-mono w-full text-gray-700 -ml-10">
+        <h2 className="flex justify-center hover:font-bold items-center  w-full text-gray-700 -ml-10">
           {title}
         </h2>
       </div>
@@ -120,7 +120,7 @@ export default async function HomePage() {
         width={96}
         height={96}
       />
-      <h1 className="font-mono mt-4 mb-8 text-xl text-white">{data.name}</h1>
+      <h1 className=" mt-4 mb-8 text-xl text-black">{data.name}</h1>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
