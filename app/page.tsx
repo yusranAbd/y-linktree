@@ -10,6 +10,7 @@ function TwitterIcon() {
   return (
     <svg
       width="30"
+      color='#00ACEE'
       height="24"
       viewBox="0 0 24 20"
       fill="none"
@@ -34,6 +35,7 @@ function GitHubIcon() {
   return (
     <svg
       width="30"
+      color='black'
       height="30"
       viewBox="0 0 24 24"
       fill="none"
@@ -74,7 +76,7 @@ function LinkCard({ href, title, image, bgshine, disable }: {href: string; title
             />
           )}
         </div>
-        <h2 className="flex justify-center hover:font-bold items-center  w-full text-gray-700 -ml-10">
+        <h2 className="flex justify-center hover:font-bold items-center  w-full -ml-10">
           {title}
         </h2>
       </div>
