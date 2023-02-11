@@ -84,6 +84,18 @@ function LinkCard({ href, title, image, bgshine, disable }: {href: string; title
   )
 }
 
+function YoutubeEmbed({embedId}:{embedId:string}) {
+  return(
+    <div className="aspect-w-16 aspect-h-9">
+    <iframe
+      src={`https://www.youtube.com/embed/${embedId}`}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
+  )
+}
+
 interface Data {
   name: string;
   avatar: string;
@@ -113,6 +125,7 @@ export default async function HomePage() {
   }
 
   return(
+    <>
     <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
         <Image
         priority
@@ -144,6 +157,10 @@ export default async function HomePage() {
         ))}
       </div>
     </div>
+      <div className="px-8 py-6">
+        <YoutubeEmbed embedId="-5GwSr2SKZA"/>
+      </div>
+    </>
   )
 }
 
