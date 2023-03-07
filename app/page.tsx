@@ -157,9 +157,9 @@ export default async function HomePage() {
         ))}
       </div>
     </div>
-      <div className="lg:mx-64 lg:my-6 px-2 py-5">
+      {/* <div className="lg:mx-64 lg:my-6 px-2 py-5">
         <YoutubeEmbed embedId="-5GwSr2SKZA"/>
-      </div>
+      </div> */}
     </>
   )
 }
