@@ -135,11 +135,8 @@ export default async function HomePage() {
         width={96}
         height={96}
       />
-      <h1 className=" mt-4 mb-8 text-xl font-bold text-black">{data.name}</h1>
-      {data.links.map((link) => (
-        <LinkCard key={link.href} {...link} />
-      ))}
-      <div className="flex items-center gap-4 mt-8 text-white">
+      <h1 className=" mt-4 mb-2 text-xl font-bold text-black">{data.name}</h1>
+      <div className="flex items-center gap-4 mb-8 text-white">
         {data.socials.map((social) => (
           <a
             aria-label={`${social.title} link`}
@@ -156,10 +153,15 @@ export default async function HomePage() {
           </a>
         ))}
       </div>
+      {data.links.map((link) => (
+        <LinkCard key={link.href} {...link} />
+      ))}
     </div>
-      {/* <div className="lg:mx-64 lg:my-6 px-2 py-5">
-        <YoutubeEmbed embedId="-5GwSr2SKZA"/>
-      </div> */}
+    <div className="flex flex-col gap-2">
+        <div className="lg:mx-64 lg:my-6 px-2 py-5">
+          <YoutubeEmbed embedId="JPoZyMEswPg"/>
+        </div>
+    </div>
     </>
   )
 }
