@@ -157,11 +157,11 @@ export default async function HomePage() {
         <LinkCard key={link.href} {...link} />
       ))}
     </div>
-    <div className="flex flex-col gap-2">
+    {/* <div className="flex flex-col gap-2">
         <div className="lg:mx-64 lg:my-6 px-2 py-5">
           <YoutubeEmbed embedId="JPoZyMEswPg"/>
         </div>
-    </div>
+    </div> */}
     </>
   )
 }
